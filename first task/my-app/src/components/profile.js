@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import slack from '../slack.png'
+import github from '../github.png'
 
 class Profile extends Component {
     render() {
@@ -9,6 +11,10 @@ class Profile extends Component {
       <a href='https://books.zuri.team/python-for-beginners?ref_id=<nonfungibleayo.eth>' target="_blank" id="book__python">Python Books</a>
       <a href='https://background.zuri.team' target="_blank" id="pitch">Background check for coders</a>
       <a href='https://books.zuri.team/design-rules' target="_blank" id="bok_design">Design Books</a>
+      <div className="div3">
+        <img src={slack} className="slack-logo" alt="slack" id='slack__img'></img>
+        <img src={github} className="github-logo" alt="Github" id='github__img'></img>        
+      </div>
       </div>
     }
 }

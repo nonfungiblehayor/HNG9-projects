@@ -56,6 +56,18 @@
             text-decoration: none;
         }
       }
+      .div3 {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 4vw;
+        gap: 8vw;
+        img {
+            width: 24px;
+            height: 24px;
+        }
+      }
     }
   }
   
