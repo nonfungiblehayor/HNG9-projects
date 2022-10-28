@@ -2,6 +2,7 @@ import img from './img.png';
 import shareButton from './share button.png'
 import './App.css';
 import Profile from './components/profile'
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </div>
       </header>
       <Profile />
+      <Footer />
     </div>
   );
 }

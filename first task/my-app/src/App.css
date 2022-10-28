@@ -66,4 +66,38 @@
     width: 24px;
     height: 24px;
   }
+  .App footer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin-top: 17vw;
+  }
+  .App footer .footer-div1 {
+    display: flex;
+  }
+  .App footer .footer-div1 img {
+    width: 25vw;
+    height: 24px;
+  }
+  .App footer .footer-div2 {
+    display: flex;
+    align-items: left;
+  }
+  .App footer .footer-div2 p {
+    color: #667085;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+  .App footer .footer-div3 {
+    display: flex;
+    align-items: left;
+  }
+  .App footer .footer-div3 img {
+    width: 17vw;
+    height: 24px;
+  }
 }/*# sourceMappingURL=App.css.map */
