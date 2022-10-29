@@ -17,6 +17,11 @@
                 width: 88px;
                 height: 88px;
             }
+            img:hover {
+                img::after {
+                    content: url(./img.png);
+                }
+            }
             #twitter {
                 color: black;
                 font-family: 'Inter', sans-serif;
@@ -28,7 +33,12 @@
             }
         }
         .div2 {
-            img {
+            .share_btn {
+                width: 40px;
+                height: 40px;
+                margin-top: -10px;
+            }
+            .share_btn_desktop {
                 width: 40px;
                 height: 40px;
                 margin-top: -10px;
@@ -102,20 +112,24 @@
         }
       }
     }
+    @media screen and (max-width: 640px) {
+        .share_btn_desktop {
+            display: none;
+        }
+    }
     @media screen and (min-width: 640px) {
         .App {
           text-align: center;
           header { 
             max-width: 100%;
             display: grid;
-            grid-template-columns: 80vw auto;
+            grid-template-columns: 35vw 5vw;
             justify-content: center;
             margin-top: 4vw;
             .div1 {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                padding-left: 10vw;
+                display: grid;
+            justify-content: center;
+            grid-template-columns: auto;
                 img {
                     width: 88px;
                     height: 88px;
@@ -131,7 +145,13 @@
                 }
             }
             .div2 {
-                img {
+                .share_btn {
+                    // width: 40px;
+                    // height: 40px;
+                    // margin-top: -10px;
+                    display: none;                  
+                }
+                .share_btn_desktop {
                     width: 40px;
                     height: 40px;
                     margin-top: -10px;
@@ -164,7 +184,7 @@
             flex-direction: row;
             align-items: center;
             margin-top: 4vw;
-            gap: 8vw;
+            gap: 3vw;
             img {
                 width: 24px;
                 height: 24px;
@@ -214,17 +234,32 @@
       header { 
         max-width: 100%;
         display: grid;
-        grid-template-columns: 80vw auto;
+        grid-template-columns: 35vw 5vw;
+        gap: 4vw;
         justify-content: center;
         margin-top: 4vw;
         .div1 {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding-left: 10vw;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: auto;
             img {
                 width: 88px;
                 height: 88px;
+            }
+            .hoverClass {
+                display: none;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: center;
+                margin-top: -6.4vw;
+                background-color: rgba(128, 128, 128, 0.597);
+                border-radius: 50px;
+                height: 88px;
+                width: 88px;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
             }
             #twitter {
                 color: black;
@@ -237,10 +272,14 @@
             }
         }
         .div2 {
-            img {
+            .share_btn {
+                // width: 40px;
+                // height: 40px;    
+                display: none;          
+            }
+            .share_btn_desktop {
                 width: 40px;
                 height: 40px;
-                margin-top: -10px;
             }
         }
       }
@@ -270,7 +309,7 @@
         flex-direction: row;
         align-items: center;
         margin-top: 4vw;
-        gap: 8vw;
+        gap: 3vw;
         img {
             width: 24px;
             height: 24px;
