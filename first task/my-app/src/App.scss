@@ -17,9 +17,19 @@
                 width: 88px;
                 height: 88px;
             }
-            img:hover {
-                img::after {
-                    content: url(./img.png);
+            .hoverClass {
+                display: none;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: center;
+                margin-top: -6.4vw;
+                background-color: rgba(128, 128, 128, 0.597);
+                border-radius: 50px;
+                height: 88px;
+                width: 88px;
+                img {
+                    width: 25px;
+                    height: 25px;
                 }
             }
             #twitter {
@@ -63,6 +73,12 @@
             width: 82vw;
             padding: 24px;
             text-decoration: none;
+        } 
+        a:hover {
+            background-color: #D0D5DD;
+        }
+        a:focus {
+            background-color: #EAECF0;
         }
       }
       .div3 {
@@ -134,6 +150,21 @@
                     width: 88px;
                     height: 88px;
                 }
+                .hoverClass {
+                    display: none;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    justify-content: center;
+                    margin-top: -6.4vw;
+                    background-color: rgba(128, 128, 128, 0.597);
+                    border-radius: 50px;
+                    height: 88px;
+                    width: 88px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
                 #twitter {
                     color: black;
                     font-family: 'Inter', sans-serif;
@@ -190,16 +221,22 @@
                 height: 24px;
             }
           }
+          .footer-container {
+            display: grid;
+            grid-template-columns: 90vw;
+            justify-content: center;
+          }
           footer {
-            max-width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            gap: 25px;
+            gap: 35px;
+            padding-top: 20px;
             padding-left: 20px;
             padding-bottom: 30px;
             margin-top: 17vw;
+            border-top: 1px solid #EAECF0;
             .footer-div1 {
                 display: flex;
                img {
@@ -315,8 +352,12 @@
             height: 24px;
         }
       }
+      .footer-container {
+        display: grid;
+        grid-template-columns: 90vw;  
+        max-width: 100%;     
+      }
       footer {
-        max-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
