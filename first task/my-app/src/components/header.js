@@ -7,7 +7,7 @@ function Header() {
 
     return  <header className="App-header">
         <div className="div1">
-      <img src={img} className="App-logo" alt="profile" id='profile__img' onMouseOut={removeDisplay} onMouseOver={changeDisplay}></img>
+      <img src={img} className="App-logo" alt="profile" id='profile__img'></img>
             <p id="twitter" title='ayo'>0x_founder</p>
             <p id="slack">nonfungibleayo</p>
         </div>
