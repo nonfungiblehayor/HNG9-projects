@@ -2,24 +2,12 @@ import React, { useRef } from 'react'
 import img from '../img.png';
 import Icon from '../Icon.png'
 import shareButton from '../share button.png'
-import camera from '../camera.png'
 
 function Header() {
-    const divRef = useRef()
-
-// const hoverClass = document.querySelector('.hoverClass')
-
-const changeDisplay = function() {
-    divRef.current.style.display = 'flex'
-  }
-const removeDisplay = function() {
-    divRef.current.style.display = 'none'
-  }
 
     return  <header className="App-header">
         <div className="div1">
       <img src={img} className="App-logo" alt="profile" id='profile__img' onMouseOut={removeDisplay} onMouseOver={changeDisplay}></img>
-      <div className="hoverClass" ref={divRef}><img src={camera} alt="profile_hover"></img></div>
             <p id="twitter" title='ayo'>0x_founder</p>
             <p id="slack">nonfungibleayo</p>
         </div>
