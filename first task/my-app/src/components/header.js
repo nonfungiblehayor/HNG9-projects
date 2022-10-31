@@ -21,7 +21,7 @@ const removeDisplay = function() {
       <img src={img} className="App-logo" alt="profile" id='profile__img' onMouseOut={removeDisplay} onMouseOver={changeDisplay}></img>
       <div className="hoverClass" ref={divRef}><img src={camera} alt="profile_hover"></img></div>
             <p id="twitter" title='ayo'>0x_founder</p>
-            <p id="slack">nonfungibleayo.eth</p>
+            <p id="slack">nonfungibleayo</p>
         </div>
         <div className="div2">
         <img src={Icon} className="share_btn_desktop" alt='share button'></img>
