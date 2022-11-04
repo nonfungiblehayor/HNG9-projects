@@ -173,9 +173,9 @@ $font :  'Inter', sans-serif;
         justify-content: space-between;
         align-items: center;
         gap: 25px;
-        padding-top: 30px;
-        padding-left: 20px;
-        padding-bottom: 30px;
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-bottom: 5px;
         border-top: 1px solid #EAECF0;
         margin-top: 15vw;
         .footer-div1 {
@@ -458,7 +458,6 @@ $font :  'Inter', sans-serif;
             .name-div {
                 display: flex;
                 flex-direction: column;
-                max-width: 100%;
                 gap: 25px;
                 .fname {
                     display: flex;
@@ -472,7 +471,7 @@ $font :  'Inter', sans-serif;
                     }
                     input {
                         border: 1px solid #D0D5DD;
-                        width: 75vw;
+                        width: 80vw;
                         padding: 10px 14px;
                         font-family: $font;
                         font-size: 16px;
@@ -496,7 +495,7 @@ $font :  'Inter', sans-serif;
                     }
                     input {
                         border: 1px solid #D0D5DD;
-                        width: 75vw;
+                        width: 80vw;
                         padding: 10px 14px;
                         font-family: $font;
                         font-size: 16px;
@@ -521,7 +520,8 @@ $font :  'Inter', sans-serif;
                 }
                 input {
                     border: 1px solid #D0D5DD;
-                    max-width: 100%;
+                    width: 80vw;
+                    // max-width: 100%;
                     padding: 10px 14px;
                     font-family: $font;
                     font-size: 16px;
@@ -591,10 +591,9 @@ $font :  'Inter', sans-serif;
             max-width: 100%;     
           }
           footer {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: left;
             gap: 25px;
             padding-top: 30px;
             padding-left: 20px;

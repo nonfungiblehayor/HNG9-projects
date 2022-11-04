@@ -172,9 +172,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 25px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 5px;
   border-top: 1px solid #EAECF0;
   margin-top: 15vw;
 }
@@ -454,7 +454,6 @@
   .contact-div form .name-div {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
     gap: 25px;
   }
   .contact-div form .name-div .fname {
@@ -470,7 +469,7 @@
   }
   .contact-div form .name-div .fname input {
     border: 1px solid #D0D5DD;
-    width: 75vw;
+    width: 80vw;
     padding: 10px 14px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -494,7 +493,7 @@
   }
   .contact-div form .name-div .lname input {
     border: 1px solid #D0D5DD;
-    width: 75vw;
+    width: 80vw;
     padding: 10px 14px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -518,7 +517,7 @@
   }
   .contact-div form .email-div input {
     border: 1px solid #D0D5DD;
-    max-width: 100%;
+    width: 80vw;
     padding: 10px 14px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -586,10 +585,9 @@
     max-width: 100%;
   }
   .contact-div footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: left;
     gap: 25px;
     padding-top: 30px;
     padding-left: 20px;
