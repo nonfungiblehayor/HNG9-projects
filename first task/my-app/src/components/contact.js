@@ -34,7 +34,9 @@ class Contact extends Component {
                         <div className='radio-div'>
                         <input type='checkbox' /> <label>You agree to submit your data to nonfungibleayo who may contact you.</label>
                         </div>
+                        {/* <div className='btn_div'> */}
                         <button type="submit" id='btn_submit'>Send message</button>
+                        {/* </div> */}
                     </div>
             </form>
             <Footer />

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 .contact-div {
   display: flex;
   align-items: center;
@@ -202,4 +202,218 @@
 .contact-div footer .footer-div3 img {
   width: 138px;
   height: 24px;
+}
+
+@media screen and (max-width: 640px) {
+  .contact-div {
+    display: flex;
+    align-items: left;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .contact-div .contact-head {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .contact-div .contact-head h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: -0.5vw;
+  }
+  .contact-div .contact-head p {
+    color: #475467;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 85vw;
+  }
+  .contact-div form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 25px;
+    margin-top: 3vw;
+  }
+  .contact-div form .name-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 25px;
+    padding-left: 30px;
+  }
+  .contact-div form .name-div .fname {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .contact-div form .name-div .fname label {
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .contact-div form .name-div .fname input {
+    border: 1px solid #D0D5DD;
+    width: 80vw;
+    padding: 10px 14px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+    border-radius: 8px;
+  }
+  .contact-div form .name-div .fname input:focus {
+    outline: none;
+  }
+  .contact-div form .name-div .lname {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .contact-div form .name-div .lname label {
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .contact-div form .name-div .lname input {
+    border: 1px solid #D0D5DD;
+    width: 80vw;
+    padding: 10px 14px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+    border-radius: 8px;
+  }
+  .contact-div form .name-div .lname input:focus {
+    outline: none;
+  }
+  .contact-div form .email-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+  }
+  .contact-div form .email-div label {
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .contact-div form .email-div input {
+    border: 1px solid #D0D5DD;
+    width: 80vw;
+    padding: 10px 14px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+    border-radius: 8px;
+  }
+  .contact-div form .email-div input:focus {
+    outline: none;
+  }
+  .contact-div form .message-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+  }
+  .contact-div form .message-div label {
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .contact-div form .message-div textarea {
+    border: 1px solid #D0D5DD;
+    width: 80vw;
+    height: 132px;
+    padding: 10px 14px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+    border-radius: 8px;
+  }
+  .contact-div form .message-div textarea:focus {
+    outline: none;
+  }
+  .contact-div form .btn-divs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 30px;
+  }
+  .contact-div form .btn-divs .radio-div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .contact-div form .btn-divs .radio-div label {
+    color: #475467;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 350px;
+  }
+  .contact-div form .btn-divs button {
+    border: 1px solid #1570EF;
+    background-color: #1570EF;
+    text-align: center;
+    padding: 12px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 85vw;
+  }
+  .contact-div .footer-container {
+    display: grid;
+    grid-template-columns: 90vw;
+    max-width: 100%;
+    margin-top: 7vw;
+  }
+  .contact-div footer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin-top: 17vw;
+  }
+  .contact-div footer .footer-div1 {
+    display: flex;
+  }
+  .contact-div footer .footer-div1 img {
+    width: 25vw;
+    height: 24px;
+  }
+  .contact-div footer .footer-div2 {
+    display: flex;
+    align-items: left;
+  }
+  .contact-div footer .footer-div2 p {
+    color: #667085;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+  .contact-div footer .footer-div3 {
+    display: flex;
+    align-items: left;
+  }
+  .contact-div footer .footer-div3 img {
+    width: 17vw;
+    height: 24px;
+  }
 }/*# sourceMappingURL=contact.css.map */
