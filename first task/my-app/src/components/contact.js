@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import Footer from './footer';
+import './contact.css';
+import '../App.css'
 
 class Contact extends Component {
     render() {
-        return <div>
-            <div>
+        return <div className='contact-div'>
+            <div className='contact-head'>
                 <h3>Contact me</h3>
                 <p>Hi there, contact me to ask me about anything you have in mind.</p>
             </div>
@@ -17,6 +20,7 @@ class Contact extends Component {
                         {/* <p>Last Name</p> */}
                     <label>Last Name</label>  <input type='text' placeholder='Enter your last name' id='last_name' />
                     </div>
+                </div>
                     <div className='email-div'>
                         {/* <p>Email</p> */}
                     <label>Email</label> <input type='email' placeholder='yourname@email.com' id='email' />
@@ -27,11 +31,13 @@ class Contact extends Component {
                     <textarea id='message' placeholder='Send me a message i will reply as soon as possible...'></textarea>
                     </div>
                     <div className='btn-divs'>
-                        <button type='radio'>You agree to submit your data to nonfungibleayo who may contact you.</button>
+                        <div className='radio-div'>
+                        <input type='checkbox' /> <label>You agree to submit your data to nonfungibleayo who may contact you.</label>
+                        </div>
                         <button type="submit" id='btn_submit'>Send message</button>
                     </div>
-                </div>
             </form>
+            <Footer />
         </div>
     }
 }
