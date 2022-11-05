@@ -161,6 +161,14 @@
   color: #ffffff;
   border-radius: 8px;
 }
+.contact-div form .btn-divs button:hover {
+  outline: 1px solid #175CD3;
+  background-color: #175CD3;
+}
+.contact-div form .btn-divs button:focus {
+  background-color: #1570EF;
+  outline: 1px solid #1570EF;
+}
 .contact-div .footer-container {
   display: grid;
   grid-template-columns: 90vw;

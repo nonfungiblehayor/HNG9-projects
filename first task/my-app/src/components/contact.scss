@@ -160,6 +160,14 @@ $font :  'Inter', sans-serif;
                 color: #ffffff;
                 border-radius: 8px;
             }
+            button:hover {
+                outline: 1px solid #175CD3;
+                background-color: #175CD3;
+            }
+            button:focus {
+                background-color:  #1570EF;
+                outline: 1px solid #1570EF;
+            }
         }
     }
     .footer-container {
